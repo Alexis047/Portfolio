@@ -14,11 +14,7 @@ const Contact = () => {
         form.current, 
         'kxE5YXCS8WTTMJyVv'
         )
-        .then((result) => {
-          console.log(result.text);
-        }, (error) => {
-          console.log(error.text);
-        });
+        e.target.reset()
     };
 
     return (
@@ -80,7 +76,7 @@ const Contact = () => {
                   className='contact__form-input'
                   placeholder="Votre message" />
               </div>
-              <button href="" className="button button--flex">
+              <button type="submit" className="button button--flex">
                 Envoyez votre message
                 <svg
                   class="button__icon"
